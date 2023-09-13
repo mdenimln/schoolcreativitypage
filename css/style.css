@@ -18,8 +18,8 @@ header{
     z-index: 999;
 }
 header nav{
-    width: 90%;
-    max-width: 1100px;
+    width: 95%;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 60px;
     display: flex;
@@ -68,24 +68,27 @@ main{
     flex-direction: column;
     align-items: center;
 }
-main .layer-one{
-    /* border: 1px solid; */
-    width: 90%; 
-    max-width: 1100px;
+
+main .layer-one{  
+    width: 100%;    
+    z-index: 1;
+}
+main .layer-one .layer{   
+    width: 95%;
+    max-width: 1200px;    
     margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: space-between; 
-    z-index: 1;
 }
 main .layer-one img.hero-image{
-    /* border: 2px solid red; */
+    /* Bingung mau di taro dimana di tengah atau di kanan */
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     position: absolute;
-    left: 51%;
-    top: 50%;
+    left: 60%;
+    top: 60%;
     transform: translate(-50%, -50%);
     animation: flo 5s infinite;
     transition: 1s;
@@ -180,4 +183,70 @@ main .layer-one aside a{
 footer{
     height: 100vh;
     background-color: #b80de2;
+}
+/* .element {
+    transform: translate(-49px, -26px) scale(0.9, 1) skew(0deg, -7deg);
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .element:hover {
+    transform: translate(0px, 0px);
+  } */
+
+  .layer-two{
+    border: 1px solid;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    background: rgb(31,31,71);
+}
+.layer-two .layer{
+    margin: 0 auto;
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+}
+.layer-two .content{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.layer-two .content .desc{
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.layer-two .content .desc span{
+    opacity: 0.7;
+    font-weight: 600;
+}
+.layer-two .content .desc h2{
+    font-size: 2.5em;
+}
+.layer-two .content .desc p{
+    font-size: 1.1em;
+}
+.layer-two .content .icon{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.layer-two .content .icon img{
+    width: 43px;
+}
+.layer-two .content .icon button{
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    opacity: 0.7;
+    width: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    font-size: 0.9em;
 }

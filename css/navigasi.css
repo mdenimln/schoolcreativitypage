@@ -59,7 +59,7 @@ nav ul .nav-list i{
 }
 nav ul .nav-list li{
     font-weight: 600;
-    font-size: 0.95em;
+    font-size: 1em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 nav ul .nav-list:nth-child(6){

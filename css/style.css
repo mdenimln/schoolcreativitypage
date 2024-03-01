@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
+    list-style: none;   
 }
 :root{
     --colorDarkTitle: #020202;
@@ -11,7 +11,7 @@
     --colorLightText: #ffffffe3;
     --colorLightTitle: #FEFEFE;
 }
-::-webkit-scrollbar {height:2px;width: 4px;background: rgba(204, 204, 204, 0);}
+::-webkit-scrollbar {height:2px;width: 8px;background: rgba(204, 204, 204, 0);}
 ::-webkit-scrollbar-thumb {background-color: #8097fc;-moz-border-radius: 10px;border-radius: 10px;}
 img{
  width: 100px;
@@ -118,6 +118,7 @@ main .layer-one aside{
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 9999;
 }
 
 
